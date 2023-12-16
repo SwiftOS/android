@@ -7,6 +7,12 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
+  <remote  name="swift"
+           fetch="https://github.com/"
+	         sync-c="true"
+	         sync-j="4"
+           revision="refs/heads/u" />
+
   <remote  name="crdroid-gitlab"
            fetch="https://gitlab.com/"
            sync-c="true"
@@ -14,7 +20,7 @@
            revision="refs/heads/14.0" />
 
   <!-- crDroid additions -->
-  <project path="android" name="crdroidandroid/android" remote="crdroid" />
+  <!--<project path="android" name="crdroidandroid/android" remote="crdroid" />-->
 
   <project path="art" name="crdroidandroid/android_art" groups="pdk" remote="crdroid" />
 
@@ -48,7 +54,7 @@
   <project path="external/wpa_supplicant_8" name="crdroidandroid/android_external_wpa_supplicant_8" groups="pdk" remote="crdroid" />
 
   <project path="frameworks/av" name="crdroidandroid/android_frameworks_av" groups="pdk" remote="crdroid" />
-  <project path="frameworks/base" name="crdroidandroid/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
+  <!--<project path="frameworks/base" name="crdroidandroid/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />-->
   <project path="frameworks/libs/systemui" name="crdroidandroid/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" remote="crdroid" />
   <project path="frameworks/native" name="crdroidandroid/android_frameworks_native" groups="pdk" remote="crdroid" />
   <project path="frameworks/opt/telephony" name="crdroidandroid/android_frameworks_opt_telephony" groups="pdk" remote="crdroid" />
@@ -63,20 +69,20 @@
 
   <project path="packages/apps/Backgrounds" name="crdroidandroid/android_packages_apps_Backgrounds" remote="crdroid" />
   <project path="packages/apps/Contacts" name="crdroidandroid/android_packages_apps_Contacts" groups="pdk-fs" remote="crdroid" />
-  <project path="packages/apps/crDroidSettings" name="crdroidandroid/android_packages_apps_crDroidSettings" remote="crdroid" />
+  <!--<project path="packages/apps/crDroidSettings" name="crdroidandroid/android_packages_apps_crDroidSettings" remote="crdroid" />-->
   <project path="packages/apps/DeskClock" name="crdroidandroid/android_packages_apps_DeskClock" groups="pdk-fs" remote="crdroid" />
   <project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" groups="pdk-fs" remote="crdroid" />
   <project path="packages/apps/ExactCalculator" name="crdroidandroid/android_packages_apps_ExactCalculator" remote="crdroid" />
   <project path="packages/apps/FaceUnlock" name="crdroidandroid/android_packages_apps_FaceUnlock" remote="crdroid-gitlab" />
   <project path="packages/apps/GameSpace" name="crdroidandroid/android_packages_apps_GameSpace" remote="crdroid" />
-  <project path="packages/apps/Launcher3" name="crdroidandroid/android_packages_apps_Launcher3" groups="pdk-fs" remote="crdroid" />
+  <!--<project path="packages/apps/Launcher3" name="crdroidandroid/android_packages_apps_Launcher3" groups="pdk-fs" remote="crdroid" />-->
   <project path="packages/apps/LineageParts" name="crdroidandroid/android_packages_apps_LineageParts" remote="crdroid" />
   <project path="packages/apps/Matlog" name="crdroidandroid/android_packages_apps_Matlog" remote="crdroid" />
   <project path="packages/apps/Messaging" name="crdroidandroid/android_packages_apps_Messaging" groups="pdk-fs" remote="crdroid" />
   <project path="packages/apps/Nfc" name="crdroidandroid/android_packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="crdroid" />
-  <project path="packages/apps/Settings" name="crdroidandroid/android_packages_apps_Settings" groups="pdk-fs" remote="crdroid" />
-  <project path="packages/apps/SetupWizard" name="crdroidandroid/android_packages_apps_SetupWizard" remote="crdroid" />
-  <project path="packages/apps/Updater" name="crdroidandroid/android_packages_apps_Updater" remote="crdroid" />
+  <!--<project path="packages/apps/Settings" name="crdroidandroid/android_packages_apps_Settings" groups="pdk-fs" remote="crdroid" />-->
+  <!--<project path="packages/apps/SetupWizard" name="crdroidandroid/android_packages_apps_SetupWizard" remote="crdroid" />-->
+  <!--<project path="packages/apps/Updater" name="crdroidandroid/android_packages_apps_Updater" remote="crdroid" />-->
   <project path="packages/apps/WallpaperPicker2" name="crdroidandroid/android_packages_apps_WallpaperPicker2" groups="pdk-fs" remote="crdroid" />
   <project path="packages/inputmethods/LatinIME" name="crdroidandroid/android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="crdroid" />
   <project path="packages/modules/adb" name="crdroidandroid/android_packages_modules_adb" groups="pdk" remote="crdroid" />
@@ -104,7 +110,22 @@
   <project path="toolchain/pgo-profiles" name="crdroidandroid/android_toolchain_pgo-profiles" groups="pdk" remote="crdroid" />
 
   <project path="vendor/addons" name="crdroidandroid/android_vendor_addons" remote="crdroid" />
-  <project path="vendor/crDroidOTA" name="crdroidandroid/android_vendor_crDroidOTA" remote="crdroid" />
-  <project path="vendor/lineage" name="crdroidandroid/android_vendor_crdroid" remote="crdroid" />
+  <!--<project path="vendor/crDroidOTA" name="crdroidandroid/android_vendor_crDroidOTA" remote="crdroid" />-->
+  <!--<project path="vendor/lineage" name="crdroidandroid/android_vendor_crdroid" remote="crdroid" />-->
   <project path="vendor/pixel-framework" name="crdroidandroid/android_vendor_pixel-framework" remote="crdroid" />
+
+
+  <!-- SwiftOS additions -->
+  <project path="android" name="swiftos/android" remote="swift" />
+
+  <project path="frameworks/base" name="swiftos/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="swift" />
+
+  <project path="packages/apps/swiftSettings" name="swiftos/android_packages_apps_swiftSettings" remote="swift" />
+  <project path="packages/apps/Settings" name="swiftos/android_packages_apps_Settings" groups="pdk-fs" remote="swift" />
+  <project path="packages/apps/SetupWizard" name="swiftos/android_packages_apps_SetupWizard" remote="swift" />
+  <project path="packages/apps/Updater" name="swiftos/android_packages_apps_Updater" remote="swift" />
+  <project path="packages/apps/Launcher3" name="swiftos/android_packages_apps_Launcher3" groups="pdk-fs" remote="swift" />
+
+  <project path="vendor/swiftOTA" name="swiftos/android_vendor_swiftOTA" remote="swift" />
+  <project path="vendor/lineage" name="swiftos/android_vendor_swift" remote="swift" />
 </manifest>
