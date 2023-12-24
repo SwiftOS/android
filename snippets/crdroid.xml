@@ -19,6 +19,12 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
+  <remote  name="bitbucket"
+	   fetch="https://bitbucket.org/projectmatrixx"
+	   sync-c="true"
+	   sync-j="4"
+   	   revision="refs/heads/14.0" />
+
   <!-- crDroid additions -->
   <!--<project path="android" name="crdroidandroid/android" remote="crdroid" />-->
 
@@ -129,4 +135,6 @@
 
   <project path="vendor/swiftOTA" name="swiftos/android_vendor_swiftOTA" remote="swift" />
   <project path="vendor/lineage" name="swiftos/android_vendor_swift" remote="swift" />
+
+  <project path="vendor/gapps" name="android_vendor_gapps" remote="bitbucket" />
 </manifest>
