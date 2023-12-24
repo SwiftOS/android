@@ -125,6 +125,7 @@
   <project path="packages/apps/SetupWizard" name="swiftos/android_packages_apps_SetupWizard" remote="swift" />
   <project path="packages/apps/Updater" name="swiftos/android_packages_apps_Updater" remote="swift" />
   <project path="packages/apps/Launcher3" name="swiftos/android_packages_apps_Launcher3" groups="pdk-fs" remote="swift" />
+  <project path="packages/apps/InnerTune" name="swiftos/android_packages_apps_InnerTune" remote="swift" />
 
   <project path="vendor/swiftOTA" name="swiftos/android_vendor_swiftOTA" remote="swift" />
   <project path="vendor/lineage" name="swiftos/android_vendor_swift" remote="swift" />
