@@ -115,7 +115,7 @@
 
   <project path="toolchain/pgo-profiles" name="crdroidandroid/android_toolchain_pgo-profiles" groups="pdk" remote="crdroid" />
 
-  <project path="vendor/addons" name="crdroidandroid/android_vendor_addons" remote="crdroid" />
+  <!--<project path="vendor/addons" name="crdroidandroid/android_vendor_addons" remote="crdroid" />-->
   <!--<project path="vendor/crDroidOTA" name="crdroidandroid/android_vendor_crDroidOTA" remote="crdroid" />-->
   <!--<project path="vendor/lineage" name="crdroidandroid/android_vendor_crdroid" remote="crdroid" />-->
   <project path="vendor/pixel-framework" name="crdroidandroid/android_vendor_pixel-framework" remote="crdroid" />
@@ -133,6 +133,7 @@
   <project path="packages/apps/Launcher3" name="swiftos/android_packages_apps_Launcher3" groups="pdk-fs" remote="swift" />
   <project path="packages/apps/InnerTune" name="swiftos/android_packages_apps_InnerTune" remote="swift" />
 
+  <project path="vendor/addons" name="swiftos/android_vendor_addons" remote="swift" />
   <project path="vendor/swiftOTA" name="swiftos/android_vendor_swiftOTA" remote="swift" />
   <project path="vendor/lineage" name="swiftos/android_vendor_swift" remote="swift" />
 
